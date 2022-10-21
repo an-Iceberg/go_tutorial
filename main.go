@@ -7,6 +7,7 @@ import (
 	"go_tutorial_basics/constants"
 	"go_tutorial_basics/deferPanicAndRecover"
 	"go_tutorial_basics/environmentVariables"
+	"go_tutorial_basics/errorHandling"
 	"go_tutorial_basics/functions"
 	"go_tutorial_basics/goroutines"
 	"go_tutorial_basics/ifAndSwitchStatements"
@@ -15,7 +16,7 @@ import (
 	"go_tutorial_basics/mapsAndStructs"
 	"go_tutorial_basics/pointersAndScoping"
 	"go_tutorial_basics/primitives"
-	math "go_tutorial_basics/testing"
+	"go_tutorial_basics/stringManipulation"
 	"go_tutorial_basics/variables"
 )
 
@@ -62,5 +63,9 @@ func main() {
 	environmentVariables.Go()
 	fmt.Println()
 
-	fmt.Println(math.Add(1, 2))
+	errorHandling.Go()
+	fmt.Println()
+
+	stringManipulation.Go()
+	fmt.Println()
 }

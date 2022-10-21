@@ -35,13 +35,9 @@ func Go() {
 	if guess < 1 || guess > 100 {
 		fmt.Println("The guess must be between 1 and 100")
 	} else {
-		if guess < number {
-			fmt.Println("Too low")
-		} else if guess > number {
-			fmt.Println("Too high")
-		} else {
-			fmt.Println("Correct guess")
-		}
+		if guess < number { fmt.Println("Too low")
+		} else if guess > number { fmt.Println("Too high")
+		} else { fmt.Println("Correct guess") }
 	}
 
 	// Comparing two floats to a defined accuracy
@@ -58,10 +54,10 @@ func Go() {
 	switch i := 2 * 3; i {
 		case 1, 5, 10:
 			fmt.Println("one, five or ten")
+
 			// One can also break out of a switch statement like so
-			if i == 10 {
-				break
-			}
+			if i == 10 { break }
+
 			fmt.Println("This will print too")
 		case 2, 4, 6: fmt.Println("two, four or six")
 		default: fmt.Println("another number")
@@ -72,7 +68,9 @@ func Go() {
 	switch {
 		case i <= 10: fmt.Println("Less than or equal to 10")
 			fallthrough // Logicless, will execute the next case regardless if the logic test fails or not
+
 		case i <= 20: fmt.Println("Less than or equal to 20")
+
 		default: fmt.Println("Greater than 20")
 	}
 
@@ -80,8 +78,11 @@ func Go() {
 	var j interface{} = 1
 	switch j.(type) {
 		case int: fmt.Println("integer")
+
 		case float32: fmt.Println("float32")
+
 		case string: fmt.Println("string")
+
 		default: fmt.Println("different type")
 	}
 }
