@@ -16,7 +16,7 @@ func Go() {
 	someFile, error := os.Open("some_non_existent_file.format")
 
 	if error != nil {
-		fmt.Println("File could not be found")
+		fmt.Println("File path could not be found")
 		return
 	} else {
 		fmt.Println(someFile)

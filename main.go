@@ -8,6 +8,7 @@ import (
 	"go_tutorial_basics/deferPanicAndRecover"
 	"go_tutorial_basics/environmentVariables"
 	"go_tutorial_basics/errorHandling"
+	"go_tutorial_basics/fileSystem"
 	"go_tutorial_basics/functions"
 	"go_tutorial_basics/goroutines"
 	"go_tutorial_basics/ifAndSwitchStatements"
@@ -67,5 +68,8 @@ func main() {
 	fmt.Println()
 
 	stringManipulation.Go()
+	fmt.Println()
+
+	fileSystem.Go()
 	fmt.Println()
 }
