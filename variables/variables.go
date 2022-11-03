@@ -33,5 +33,13 @@ func Go() {
 
 	six := strconv.Itoa(four)
 
-	fmt.Printf("one: %v %T\ntwo: %v %T\nthree: %v %T\nfour: %v %T\nfive: %v %T\nsix: %v %T\n", one, one, two, two, three, three, four, four, five, five, six, six)
+	fmt.Printf(
+		"one: %v %T\ntwo: %v %T\nthree: %v %T\nfour: %v %T\nfive: %v %T\nsix: %v %T\n",
+		one, one,
+		two, two,
+		three, three,
+		four, four,
+		five, five,
+		six, six,
+	)
 }

@@ -31,7 +31,7 @@ func TestAdd(test *testing.T) {
 		result := Add(addTest.x, addTest.y)
 
 		if result != addTest.expectedOutput {
-			test.Errorf("Add(%d, %d) => Expected: %d; Got: %d", addTest.x, addTest.y, addTest.expectedOutput, result)
+			test.Errorf("Add(%d, %d) Expected: %d; Got: %d", addTest.x, addTest.y, addTest.expectedOutput, result)
 		}
 	}
 }
