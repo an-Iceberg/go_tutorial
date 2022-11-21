@@ -1,4 +1,4 @@
-module go_tutorial_basics
+module goTutorialBasics
 
 go 1.19
 
