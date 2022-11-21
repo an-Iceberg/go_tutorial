@@ -80,6 +80,7 @@ func (greeter greeter) print() {
 	fmt.Printf("Greeting: %s, Name: %s\n", greeter.greeting, greeter.name)
 }
 
+// TODO: split this into "regular" and "anonymous"
 func Go() {
 	fmt.Println("  Functions")
 
@@ -143,9 +144,8 @@ func Go() {
 		divide = func(f1, f2 float64) (float64, error) {
 			if f2 == 0.0 {
 				return 0.0, fmt.Errorf("cannot divide by zero")
-			} else {
-				return f1 / f2, nil
 			}
+			return f1 / f2, nil
 		}
 
 		d, err := divide(5.0, 3.0)
@@ -160,4 +160,21 @@ func Go() {
 	someGreeter.greet()
 	someGreeter.print()
 	someGreeter.greetAndChangeName()
+
+	// Functional patterns
+	{
+		local_print := func(function func(int, int) int, a, b int)  {
+			fmt.Println(function(a, b))
+			// someGreeter.greet() // <== This is possible and possibly problematic
+		}
+
+		prod := func(a, b int) int { return a * b }
+		sum := func(a, b int) int { return a + b }
+
+		local_print(prod, 2, 5)
+		local_print(sum, 2, 5)
+	}
+
+	regularFunctions()
+	anonymousFunctions()
 }
