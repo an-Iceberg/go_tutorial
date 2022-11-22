@@ -72,4 +72,22 @@ func main() {
 
 	fileSystem.Go()
 	fmt.Println()
+
+  me := person{
+    name: name{
+      first: "Knight",
+      last: "Kazul",
+    },
+    height: 178,
+    weight: 82,
+    gender: "unknown",
+    address: address{
+      street: "Goonvrea",
+      houseNumber: 10,
+      zipCode: 34832,
+      city: "Halhul",
+    },
+  }
+
+  me.print()
 }
