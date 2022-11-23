@@ -4,10 +4,11 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func Go() {
-	fmt.Println("  Error handling")
+	fmt.Println(strings.ToUpper("  Error handling"))
 
 	err := errors.New("some new custom error")
 

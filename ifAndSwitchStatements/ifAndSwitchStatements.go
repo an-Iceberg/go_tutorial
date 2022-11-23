@@ -3,10 +3,11 @@ package ifAndSwitchStatements
 import (
 	"fmt"
 	"math"
+	"strings"
 )
 
 func Go() {
-	fmt.Println("  If and Switch Statements")
+	fmt.Println(strings.ToUpper("  If and Switch Statements"))
 
 	// Control flow statements
 	if true { fmt.Println("This is true") }

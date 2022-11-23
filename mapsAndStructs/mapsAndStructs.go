@@ -3,6 +3,7 @@ package mapsAndStructs
 import (
 	"fmt"
 	"reflect"
+	"strings"
 )
 
 // Capitalized names are exported out of the package, making them globally accessible to any user
@@ -27,7 +28,7 @@ type bird struct {
 }
 
 func Go() {
-	fmt.Println("  Maps and Structs")
+	fmt.Println(strings.ToUpper("  Maps and Structs"))
 
 	// ! Maps are passed around as reference
 	// Creating maps

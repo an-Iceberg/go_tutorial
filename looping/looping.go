@@ -6,16 +6,8 @@ import (
 	"strings"
 )
 
-func string_replace(string string, replacements map[string]string) string {
-	for key, value := range replacements {
-		string = strings.Replace(string, key, value, -1)
-	}
-
-	return string
-}
-
 func Go() {
-	fmt.Println("  Loops")
+	fmt.Println(strings.ToUpper("  Loops"))
 
 	for i := 0; i < 20; i++ {
 		fmt.Print(strconv.Itoa(i) + " ")
@@ -32,12 +24,7 @@ func Go() {
 	fmt.Println("")
 
 	for i, j := 0, 0; i <= 10; i, j = i+1, j+2 {
-		message := "i:{i} j:{j}"
-		message = string_replace(message, map[string]string{
-			"{i}": strconv.Itoa(i),
-			"{j}": strconv.Itoa(j),
-		})
-		fmt.Println(message)
+    fmt.Printf("i:%d j:%d\n", i, j)
 	}
 
 	fmt.Println("")
@@ -45,7 +32,7 @@ func Go() {
 	index := 0
 
 	for ; index < 11; index++ {
-		fmt.Println(string_replace("index:{index}", map[string]string{"{index}": strconv.Itoa(index)}))
+    fmt.Printf("index:%d\n", index)
 	}
 
 	fmt.Println("")

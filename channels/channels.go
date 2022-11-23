@@ -1,9 +1,12 @@
 package channels
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func Go() {
-	fmt.Println("  Channels")
+	fmt.Println(strings.ToUpper("  Channels"))
 
 	// TODO: add channels tutorial section
 }

@@ -1,9 +1,12 @@
 package primitives
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func Go() {
-	fmt.Println("  Primitives")
+	fmt.Println(strings.ToUpper("  Primitives"))
 
 	// Booleans
 	boolean := true // Uninitialized booleans equate to 'false'

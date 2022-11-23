@@ -3,5 +3,5 @@ package functions
 import "fmt"
 
 func regularFunctions() {
-	fmt.Println(" Regular Functions")
+	fmt.Println("  Regular Functions")
 }

@@ -1,9 +1,12 @@
 package arraysAndSlices
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func Go() {
-	fmt.Println("  Arrays and Slices")
+	fmt.Println(strings.ToUpper("  Arrays and Slices"))
 
 	// Arrays
 	var grades [3]float32 = [3]float32{4.5, 5, 4}

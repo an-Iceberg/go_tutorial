@@ -4,10 +4,11 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func Go() {
-	fmt.Println("  File System")
+	fmt.Println(strings.ToUpper("  File System"))
 
 	// Reading a file directly
 	data, error := os.ReadFile("example.txt")

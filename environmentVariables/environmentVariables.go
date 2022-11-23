@@ -2,12 +2,13 @@ package environmentVariables
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/joho/godotenv"
 )
 
 func Go() {
-	fmt.Println("  Environment Variables")
+	fmt.Println(strings.ToUpper("  Environment Variables"))
 
 	var local_environment_variables map[string]string
 	local_environment_variables, error := godotenv.Read("environmentVariables/.env")

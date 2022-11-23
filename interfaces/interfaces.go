@@ -1,6 +1,9 @@
 package interfaces
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // Interfaces can be composed of multiple interfaces
 
@@ -30,7 +33,7 @@ func (ic *intCounter) increment() int {
 }
 
 func Go() {
-	fmt.Println("  Interfaces")
+	fmt.Println(strings.ToUpper("  Interfaces"))
 
 	// Interfaces
 	some_writer := console_writer{}

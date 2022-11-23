@@ -5,13 +5,6 @@ import (
 	"strings"
 )
 
-func string_replace(string string, replacements map[string]string) string {
-	for key, value := range replacements {
-		string = strings.Replace(string, key, value, -1)
-	}
-	return string
-}
-
 // Passing in multiple variables of the same type
 func add(a, b, c int) int {
 	return a + b + c
@@ -82,13 +75,9 @@ func (greeter greeter) print() {
 
 // TODO: split this into "regular" and "anonymous"
 func Go() {
-	fmt.Println("  Functions")
+	fmt.Println(strings.ToUpper("  Functions"))
 
-	fmt.Println(string_replace(
-		"Hello $name", map[string]string{
-			"$name": "John",
-		},
-	))
+  fmt.Printf("Hello %s\n", "John")
 
 	fmt.Println(add(3, 6, 2))
 

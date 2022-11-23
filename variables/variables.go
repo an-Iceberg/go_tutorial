@@ -3,6 +3,7 @@ package variables
 import (
 	"fmt"
 	"strconv"
+	"strings"
 )
 
 /* Global variables must be declared using the 'var' keyword */
@@ -14,7 +15,7 @@ var (
 )
 
 func Go() {
-	fmt.Println("  Variables")
+	fmt.Println(strings.ToUpper("  Variables"))
 
 	var one float32
 	one = 69

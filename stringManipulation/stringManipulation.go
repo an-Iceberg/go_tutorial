@@ -6,7 +6,7 @@ import (
 )
 
 func Go() {
-	fmt.Println("  String Manipulation")
+	fmt.Println(strings.ToUpper("  String Manipulation"))
 
 	message := fmt.Sprintf("%d + %d = %d", 2, 3, 5)
 

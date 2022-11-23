@@ -2,10 +2,11 @@ package deferPanicAndRecover
 
 import (
 	"fmt"
+	"strings"
 )
 
 func Go() {
-	fmt.Println("  Defer, Panic and Recover")
+	fmt.Println(strings.ToUpper("  Defer, Panic and Recover"))
 
 	fmt.Println("start")
 	defer fmt.Println("middle") // Defers are processed in a lifo (stack) order

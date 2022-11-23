@@ -9,15 +9,8 @@ type myStruct struct {
 	foo int
 }
 
-func string_replace(string string, replacements map[string]string) string {
-	for key, value := range replacements {
-		string = strings.Replace(string, key, value, -1)
-	}
-	return string
-}
-
 func Go() {
-	fmt.Println("  Pointers and Scoping")
+	fmt.Println(strings.ToUpper("  Pointers and Scoping"))
 
 	{
 		// Pointers
@@ -49,13 +42,7 @@ func Go() {
 		fmt.Printf("newStruct:%v\n", newStruct.foo)
 	}
 
-	fmt.Println(string_replace(
-		"{name} is {age} years old",
-		map[string]string{
-			"{name}": "John",
-			"{age}":  "24",
-		},
-	))
+  fmt.Printf("%s is %d\n", "John", 24)
 
 	{
 		// Arrays are copied, Slices and Maps work with pointers

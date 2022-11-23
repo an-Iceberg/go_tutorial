@@ -22,6 +22,8 @@ import (
 )
 
 func main() {
+  fmt.Println()
+
 	variables.Go()
 	fmt.Println()
 

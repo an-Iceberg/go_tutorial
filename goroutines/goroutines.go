@@ -3,6 +3,7 @@ package goroutines
 import (
 	"fmt"
 	"runtime"
+	"strings"
 	"sync"
 )
 
@@ -23,7 +24,7 @@ func say_hello(number, thread int) {
 }
 
 func Go() {
-	fmt.Println("  Goroutines")
+	fmt.Println(strings.ToUpper("  Goroutines"))
 
 	fmt.Printf("Number of threads: %v\n", runtime.GOMAXPROCS(-1))
 

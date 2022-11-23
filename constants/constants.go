@@ -1,11 +1,14 @@
 package constants
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 const a int16 = 27
 
 func Go() {
-	fmt.Println("  Constants")
+	fmt.Println(strings.ToUpper("  Constants"))
 
 	const my_constant_value int = 10
 	fmt.Printf("%v, %T\n", my_constant_value, my_constant_value)
