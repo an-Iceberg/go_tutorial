@@ -54,4 +54,25 @@ func Go() {
 	}
 
 	file.Close()
+
+  // Writing to a file
+  {
+    // Creating the file (if it already exists, it will be reset)
+    file, error := os.Create("example_text_file.txt")
+    if error != nil {
+      fmt.Println(error.Error())
+      os.Exit(-1)
+    }
+    fmt.Println("Opened file \"example_text_file.txt\"")
+
+    number, error := file.WriteString(fmt.Sprintf("Hello World, this is a decimal number: %[1]d, and here is the hexadecimal representation of it: %[1]x\n", 75))
+    if error != nil {
+      fmt.Println(error.Error())
+      os.Exit(-1)
+    }
+    fmt.Printf("Wrote %d bytes to file\n", number)
+
+    file.Close()
+    fmt.Println("Closed file")
+  }
 }
