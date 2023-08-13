@@ -28,7 +28,7 @@ func Go() {
 
 	a := 10
 	b := 3
-	// Arithmetics are only allowed same types
+	// Arithmetics are only allowed on the same types
 	fmt.Printf("%v + %v = %v\n", a, b, a+b)
 	fmt.Printf("%v - %v = %v\n", a, b, a-b)
 	fmt.Printf("%v * %v = %v\n", a, b, a*b)

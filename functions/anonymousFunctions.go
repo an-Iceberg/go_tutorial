@@ -19,7 +19,7 @@ func anonymousFunctions() {
 
 	// Functional patterns
 	{
-		local_print := func(function func(int, int) int, a, b int)  {
+		local_print := func(function func(int, int) int, a, b int) {
 			fmt.Println(function(a, b))
 			// someGreeter.greet() // <== This is possible and possibly problematic
 		}
@@ -29,5 +29,7 @@ func anonymousFunctions() {
 
 		local_print(prod, 2, 5)
 		local_print(sum, 2, 5)
+
+		local_print(func(a, b int) int { return a + b }, 3, 4)
 	}
 }
